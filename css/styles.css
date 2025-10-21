@@ -1,0 +1,145 @@
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* Color Palette
+#706F6F - color 1 (Grey - Text color)
+#ffffff - color 2 (White - Main background of resume)
+#284b63 - color 3 (Navy Blue - Header and footer, h2 color in header and footer)
+*/
+
+/* Global styles 
+------------------------------------*/
+nav {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.contact-info a{
+    padding: 5px;
+    display: inline-block;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #706F6F;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #284b63;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #000000;
+	margin-bottom: 0.5em;
+}
+
+a {
+    color: #ADD8E6;
+}
+
+/* Header & Footer 
+------------------------------------*/
+header {
+    background-color: #284b63;
+    color: #ffffff;
+    width: 100%;
+}
+
+header h1,
+header h2 {
+    color: #ffffff;
+    margin: 0;
+}
+
+footer {
+    background-color: #284b63;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer h2 {
+    color: #ffffff;
+    margin-bottom: 0em;
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+    background-image:
+    linear-gradient(
+        rgba(255, 0, 0, 0),
+        rgba(232, 137, 137, 0.65)
+    ),
+    url("../images/LosAngeles.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff
+}
+
+/* Education
+------------------------------------*/
+.education {
+    background-color: #ffffff;
+}
+
+
